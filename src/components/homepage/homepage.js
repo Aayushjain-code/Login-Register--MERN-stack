@@ -4,12 +4,13 @@ import './homepage.css'
 
 
 
-const homepage = () => {
+const homepage = ({ setLoginUser }) => {
+
 	return (
 		<div className="homepage">
 			<h1>HomePage</h1>
-			<div className='button'>Logout</div>
-		</div>
+			<div className='button' onClick={() => setLoginUser({})} > Logout</div>
+		</div >
 	)
 }
 
